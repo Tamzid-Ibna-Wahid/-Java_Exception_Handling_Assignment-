@@ -36,12 +36,14 @@ public class MainAccount {
             System.out.println("Depositing $-10");
             System.out.println("New balance : " + shafi.getBalance());
     }
-    catch(InvalidAmountException e){
+        catch(InvalidAmountException e){
+        System.out.println("Attempting to deposit : -10");
         System.out.println(e);
     }
 
     finally{
-        System.out.println();
+        System.out.println("Final Amount : "+ shafi.getBalance());
+        System.out.println("End of transaction.");
     }
 
 
